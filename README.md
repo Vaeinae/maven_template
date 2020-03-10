@@ -13,6 +13,17 @@ mvn archetype:generate -DgroupId=fi.vamk.studentid -DartifactId=projectname -Dar
 
 To be able to run java -jar add a plug-in:
 
+<build>
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+              <source>1.8</source>
+              <target>1.8</target>
+          </configuration>
+      </plugin>
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
@@ -28,3 +39,13 @@ To be able to run java -jar add a plug-in:
               </descriptorRefs>
           </configuration>
       </plugin>
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.5.0</version>
+          <configuration>
+              <mainClass>fi.vamk.studentid.App</mainClass>
+          </configuration>
+      </plugin>
+    </plugins>  
+  </build>
