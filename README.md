@@ -24,6 +24,7 @@ To be able to run java -jar add a plug-in:
               <target>1.8</target>
           </configuration>
       </plugin>
+      <!-- enabling java -jar target\javaproject.jar -command -->
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
