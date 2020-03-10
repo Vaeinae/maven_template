@@ -39,6 +39,7 @@ To be able to run java -jar add a plug-in:
               </descriptorRefs>
           </configuration>
       </plugin>
+      <!-- enabling mvn exec:java -command -->
       <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
