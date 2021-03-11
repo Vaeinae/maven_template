@@ -8,6 +8,10 @@ mvn package
 
 java -jar target/projectname-1.0-SNAPSHOT.jar
 
+or
+
+mvn exec:java
+
 In case you want to create a maven from scratch:
 mvn archetype:generate -DgroupId=fi.vamk.studentid -DartifactId=projectname -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeGroupId=org.apache.maven.archetypes
 
